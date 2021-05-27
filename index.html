@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <title>차체생기3팀 차량전산예약시스템</title>
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">차량전산예약시스템 (PMS)</h1>
+    </div>
+    <div class="content-container">
+      <div class="form-container container">
+        <h2>사용신청</h2>
+        <input placeholder="이름" id="name-field">
+        <input placeholder="부서" id="department-field" value="차체생기3팀">
+        <input placeholder="연락처" id="contact-field" value="010">
+        <input placeholder="목적지" id="destination-field">
+        <button id="register-btn">신청</button>
+        <!-- <button id="log">로그</button> -->
+
+       <div id="status"></div>
+    </div>
+    
+      <div class="table-container container">
+        <h2>사용내역</h2>
+        <div class="headrow">
+          <div class="headrow-element" style="width: 10%">날짜</div>
+          <div class="headrow-element" style="width: 10%">시간</div>
+          <div class="headrow-element" style="width: 10%">이름</div>
+          <div class="headrow-element" style="width: 15%">팀</div>
+          <div class="headrow-element" style="width: 17.5%">연락처</div>
+          <div class="headrow-element" style="width: 15%">목적지</div>
+          <div class="headrow-element" style="width: 7.5%">반납</div>
+          <div class="headrow-element" style="width: 17.5%">비고</div>
+        </div>
+        
+        <div id="table">
+            <table>
+             
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
